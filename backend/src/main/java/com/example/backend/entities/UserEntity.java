@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 // Esto le dice a hibernate que haga una tabla de esta clase en la base de datos
+// End point para crear el usuario
 @Entity(name = "users")
 public class UserEntity implements Serializable{
 

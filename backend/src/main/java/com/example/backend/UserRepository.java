@@ -8,5 +8,6 @@ import org.springframework.stereotype.Repository;
 //Se utiliza para hacer operaciones CRUD, usando la clase CrudRepository
 @Repository
 public interface UserRepository extends CrudRepository<UserEntity, Long> {
-    //public UserEntity findUserByEmailFirstName(String email);
+    //Devuelve objetos- lo q quremos es buscar un usuario por correo electronico
+    UserEntity findByEmail(String email);
 }

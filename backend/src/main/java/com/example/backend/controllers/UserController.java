@@ -27,6 +27,7 @@ public class UserController {
         return "get user details";
     }
     //metodo o endpoint donde se reciben los datos del usuario como objt java
+    //endpoint para conseguir el usuario
     @PostMapping
     public UserRest creatUsereUser(@RequestBody UserDetailRequestModel userDetails){
         //Se crea el objeto que se va a retornar

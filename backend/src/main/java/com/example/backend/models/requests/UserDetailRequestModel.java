@@ -1,6 +1,7 @@
 package com.example.backend.models.requests;
 
 //Convierte el JSON en una clase de JAVA que podamos utilizar
+//Se utiliza para crear un usuario
 
 public class UserDetailRequestModel {
     private String firstName;
