@@ -1,6 +1,8 @@
 package com.example.backend.entities;
 
 import java.io.Serializable;
+//import java.sql.Date;
+import java.time.LocalDate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -30,6 +32,9 @@ public class UserEntity implements Serializable{
     @Column(nullable = false, length = 255)
     private String email;
 
+    @Column(nullable = false, length = 255)
+    private LocalDate date;
+
     @Column(nullable = false)
     private String encryptedPassword;
 
@@ -39,6 +44,14 @@ public class UserEntity implements Serializable{
 
     public long getId() {
         return this.id;
+    }
+    
+    public LocalDate getDate() {
+        return this.date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 
     public String getUserId() {

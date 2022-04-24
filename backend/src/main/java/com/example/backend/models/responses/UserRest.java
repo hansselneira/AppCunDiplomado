@@ -1,12 +1,22 @@
 package com.example.backend.models.responses;
 
+import java.time.LocalDate;
+
 public class UserRest {
     private String firstName;
     private String lastName;
     private String email;
     //private String password;
     private String userId;
+    private LocalDate date;
 
+    public LocalDate date() {
+        return this.date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
     public String getFirstName() {
         return this.firstName;
     }

@@ -1,6 +1,7 @@
 package com.example.backend.shared.dtos;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 
 public class UserDto implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -12,7 +13,15 @@ public class UserDto implements Serializable {
     private String email;
     private String password;
     private String encryptedPassword;
+    private LocalDate date;
     
+    public LocalDate getDate() {
+        return this.date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
 
     public long getId() {
         return this.id;

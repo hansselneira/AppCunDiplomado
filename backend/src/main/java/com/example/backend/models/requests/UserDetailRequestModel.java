@@ -1,5 +1,7 @@
 package com.example.backend.models.requests;
 
+import java.time.LocalDate;
+
 //Convierte el JSON en una clase de JAVA que podamos utilizar
 //Se utiliza para crear un usuario
 
@@ -8,7 +10,16 @@ public class UserDetailRequestModel {
     private String lastName;
     private String email;
     private String password;
+    private LocalDate date;
 
+
+    public LocalDate getdate() {
+        return this.date;
+    }
+
+    public void setdate(LocalDate date) {
+        this.date = date;
+    }
     public String getFirstName() {
         return this.firstName;
     }
